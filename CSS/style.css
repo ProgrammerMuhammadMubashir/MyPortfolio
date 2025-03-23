@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainfont:sans-serif;
+    --shadowcolorlight:rgb(125, 17, 202);
+    --shadowcolordark:rgb(64, 2, 109);
+    --bodygrey:rgb(167, 167, 167);
+    --boxgradient:linear-gradient(to right, indigo, #330446);
+    --primarybackground:black;
+    --primarytext:rgb(123, 38, 219);
+
+
+
+}
+/* body{
+    background-color: var(--primarybackground);
+} */
+header{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+height: 7vh;
+padding: 3px;
+background-color: var(--primarybackground);
+
+}
+nav ul {
+    display: flex;
+    border:  1px inset var(--primarybackground);
+  
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    font-family: var(--mainfont);
+    list-style-type:none;
+    cursor: pointer;
+
+}
+nav ul li:active{
+background:var(--boxgradient);
+}
+
+
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    background: var(--primarybackground);
+}
+.myIntroDisc{
+    display: flex;
+    flex-direction: column;
+    margin:30px;
+    padding: 5px;
+   
+}
+
+.myName{
+    font-size: xx-large;
+    color: var(--primarytext);
+    font-family: var(--mainfont);
+}
+.myDisc{
+    color: var(--bodygrey);
+    font-family: var(--mainfont);
+    margin-top: 10px;
+}
+.myDynamicFields{
+    font-size: x-large;
+width: 30px;
+height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 250px;
+    color: var(--primarytext);
+    font-family: var(--mainfont);
+    border-left: 2px solid var(--primarytext);
+}
+.quickAccessBtns{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 30px;
+}
+.qab{
+    width: 48%;
+    height: 5vh;
+font-family: var(--mainfont);
+color: white;
+background-color: var(--primarybackground);
+position: relative;
+border: 1px solid var(--primarytext);
+
+cursor: pointer;
+border-radius: 2px;
+z-index: 3;
+}
+.qab::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:var(--boxgradient);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 200ms ease-in;
+}
+
+.qab:hover::before{
+    width: 100%;
+}
+.qab:hover{
+    box-shadow:1px 1px 20px 0px var(--shadowcolorlight);
+}
+
+
+.whoAmIContainer ,.mySkillsContainer {
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+   background-color:var(--primarybackground);
+}
+.headingWho,.headingMySkills,.faqsHeading{
+text-align: center;
+color: var(--primarytext);
+font-size: xx-large;
+text-shadow: 1px 1px var(--shadowcolordark);
+font-family: var(--mainfont);
+}
+.iconWhoAmI{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    border-bottom: 1px solid var(--primarytext);
+    box-shadow:1px 1px 20px 0px var(--shadowcolorlight);
+}
+.sub-who{
+display: flex;
+align-items: center;
+font-family: var(--mainfont);
+padding: 5px;
+
+
+}
+.sub-sub-who {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-left: 20px;
+
+}
+.sub-sub-who span{
+    font-size:large;
+    color: var(--primarytext);
+    font-family: var(--mainfont);
+    /* text-decoration: 2px  underline  var(--shadowcolordark); */
+}
+.sub-sub-who p{
+    font-size: 15px;
+    margin-top: 7px;
+        color: var(--bodygrey);
+        font-family: var(--mainfont);
+}
+
+#allIconsAndDisc{
+
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+    /* border: 1px solid red; */
+    font-family: var(--mainfont);
+    color: var(--bodygrey);
+    width: 1000px;
+    
+padding: 5px;
+}
+#allIconsAndDisc div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3px;
+}
+.skillIcon{
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+}
+
+
+
+/*FAQs*/
+
+
+    #FAQs{
+        background-color: var(--primarybackground);
+        height: 400px;
+    }
+    
+    
+    .accordion {
+       background-color: var(--primarybackground);
+      color: var(--shadowcolorlight);
+        cursor: pointer;
+        padding: 18px;
+        margin: 10px 0;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin-top: 10px;
+    }
+    
+    /* .active,
+    .accordion:hover {
+        background:var(--boxgradient);
+    
+    } */
+    
+    .accordion:after {
+        content: '\002B';
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2212";
+    }
+    
+    .panel {
+        padding: 0 18px;
+        background-color:var(--primarybackground);
+        max-height: 0;
+        overflow: hidden;
+        color: var(--bodygrey);
+        font-family: var(--mainfont);
+        transition: max-height 0.2s ease-out;
+    }
+
+    footer{
+        background: var(--primarybackground);
+        height: 7vh;
+        font-size: 14px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--bodygrey);
+        font-family: sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .activeNavli{
+        background:var(--boxgradient);
+    }
