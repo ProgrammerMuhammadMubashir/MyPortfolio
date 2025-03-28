@@ -130,7 +130,7 @@ z-index: 3;
     padding: 5px;
    background-color:var(--primarybackground);
 }
-.headingWho,.headingMySkills,.faqsHeading{
+.headingWho,.headingMySkills,.faqsHeading,.whyToChooseHeading{
 text-align: center;
 color: var(--primarytext);
 font-size: xx-large;
@@ -252,6 +252,122 @@ padding: 5px;
         font-family: var(--mainfont);
         transition: max-height 0.2s ease-out;
     }
+/* --------------------- */
+
+/*Services.html*/
+
+#offersContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 570px;
+    background-color: var(--primarybackground);
+}
+
+.Tier{
+    background-color: var(--primarybackground);
+    width: 250px;
+    height: 450px;
+    margin: 10px;
+    font-family: var(--mainfont);
+    /* padding: 5px;   */
+    border-radius: 3px; 
+    border: 3px solid var(--shadowcolorlight);
+    color: var(--bodygrey);
+}
+.Tier div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headingTier{
+    background-color: var(--primarybackground);
+ 
+    color: var(--shadowcolorlight);
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+width: 100%;
+height: 40px;
+}
+.discTier{
+    background-color: var(--primarybackground);
+    color: var(--shadowcolorlight);
+    border-bottom: 1px solid var(--shadowcolorlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+   width: 100%;
+   height: 22px;
+}
+.buttonTier{
+margin: 10px;
+width: 180px;
+height: 40px;
+background-color: var(--primarybackground);
+color:white;
+border: none;
+border-radius: 1px;
+position: relative;
+border: 1px solid var(--primarytext);
+
+cursor: pointer;
+z-index: 3;
+}
+
+.buttonTier::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:var(--boxgradient);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 200ms ease-in;
+}
+
+.buttonTier:hover::before{
+    width: 100%;
+}
+.buttonTier:hover{
+    box-shadow:1px 1px 20px 0px var(--shadowcolorlight);
+}
+
+.Tier ul{
+    padding-left: 20px; 
+    margin-bottom: 20px;
+    list-style-position: outside
+}
+.Tier  li{
+    font-size: 15px;
+word-spacing: 1px;
+line-height: 1.5;
+}
+#platinumTier{
+    scale: 1.1;
+}
+#platinumTier .headingTier,#platinumTier .discTier{
+    /* background-color: var(--shadowcolorlight); */
+    color: white;
+}
+#whyToChooseContainer{
+    display: flex;
+flex-direction: column;
+font-family: var(--mainfont);
+
+    width: 100%;
+    height: 570px;
+    background-color: var(--primarybackground);
+}
+
+
+
+
 
     footer{
         background: var(--primarybackground);

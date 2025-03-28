@@ -60,3 +60,8 @@ let acc = document.getElementsByClassName("accordion");
             }
         });
     }
+
+    let servicesButton=document.getElementById("servicesButton")
+    servicesButton.addEventListener("click",()=>{
+        window.open("/services.html","_self")
+    })
