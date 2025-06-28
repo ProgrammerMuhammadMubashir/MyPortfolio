@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Blogs</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+        <ul>
+            <li  id="homeButton" >Home</li>
+            <li  id="servicesButton">Services</li>
+            <li id="blogsButton" class="activeNavli">Blogs</li>
+
+        </ul>
+        </nav>
+    </header>
+    <main>
+    <div id="comingSoon">Coming Soon</div>
+</main>
+    <footer>
+&copy; All rights reserved to ProgrammerMuhammadMubashir
+</footer>
+
+<script>
+        let servicesButton=document.getElementById("servicesButton")
+    let homeButton=document.getElementById("homeButton")
+    let blogsButton=document.getElementById("blogsButton")
+    servicesButton.addEventListener("click",()=>{
+        window.open("/services.html","_self")
+    })
+    homeButton.addEventListener("click",()=>{
+window.open("/index.html","_self")
+    })
+    blogsButton.addEventListener("click",()=>{
+        window.open("/blogs.html","_self")
+    })
+
+</script>
+</body>
+</html>
