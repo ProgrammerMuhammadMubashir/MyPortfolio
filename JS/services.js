@@ -5,7 +5,7 @@ let silverTierBtn=document.querySelector(".silverTierBtn")
 let goldTierBtn=document.querySelector(".goldTierBtn")
 let platinumTierBtn=document.querySelector(".platinumTierBtn")
     servicesButton.addEventListener("click",()=>{
-        window.open("/services.html","_self")
+        window.open("services.html","_self")
     })
     homeButton.addEventListener("click",()=>{
 window.open("index.html","_self")
