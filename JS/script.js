@@ -67,17 +67,17 @@ let acc = document.getElementsByClassName("accordion");
     let  qabWhy=document.getElementsByClassName("qab")[0]
     let  qabContact=document.getElementsByClassName("qab")[1]
     servicesButton.addEventListener("click",()=>{
-        window.open("/services.html","_self")
+        window.open("services.html","_self")
     })
     homeButton.addEventListener("click",()=>{
-window.open("/index.html","_self")
+window.open("index.html","_self")
     })
     blogsButton.addEventListener("click",()=>{
-        window.open("/blogs.html","_self")
+        window.open("blogs.html","_self")
     })
     qabWhy.addEventListener("click",()=>{
-window.open("/services.html","_self")
+window.open("services.html","_self")
     })
     qabContact.addEventListener("click",()=>{
-        
+        window.open("mailto:itismubashiratcode@gmail.com","_blank")
     })
