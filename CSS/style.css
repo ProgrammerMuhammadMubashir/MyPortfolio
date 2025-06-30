@@ -5,7 +5,7 @@
 html{
     font-size: 16px;
 }
-body{background-color: var(--primarybackground);}
+body{background-color: var(--primarybackground); overflow-x: hidden;}
 :root{
     --mainfont:sans-serif;
     --shadowcolorlight:rgb(125, 17, 202);
@@ -18,9 +18,7 @@ body{background-color: var(--primarybackground);}
 
 
 }
-body{
-   overflow-x: hidden;
-}
+
 header{
     display: flex;
 justify-content: space-around;
@@ -422,8 +420,7 @@ border-radius: 10px;
 
   .project-links {
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .project-features{
@@ -529,13 +526,18 @@ cursor:pointer;
      .Tier{
         width: 70%;
     }
+    .skillIcon{
+        width:50px;
+        height:50px;
+        margin: 1vh;
+    }
     
      #whyToChooseContainer{
-height: 250vh;
+height: 270vh;
 
     }
     .project-card{
-        height: 100vh;
+        height: 120vh;
     }
     .project-content{
         font-size: 1rem;
@@ -543,4 +545,8 @@ height: 250vh;
     .whoAmIContainer{
         margin-bottom: 30vh;
     }
+    footer span{
+        display:none;
+    }
+    
 }
